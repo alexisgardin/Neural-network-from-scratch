@@ -2,9 +2,11 @@
  Creation of a neural network for image classification purposes (probably fashion mnist) without machine learning library
 
 ### REF : USEFULL WEBSITE (help, inspiration) FOR THIS PROJECT
-https://causeyourestuck.io/2017/06/12/neural-network-scratch-theory/ (C++ neural network from scratch explained)
-
-### 1 - LOAD MNIST HANDWRITTEN DIGIT IN C++  
+C++ neural network from scratch explained : 
+https://causeyourestuck.io/2017/06/12/neural-network-scratch-theory/
+Object-Oriented approach to Neural Networks 
+http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.46.8774&rep=rep1&type=pdf
+## 1 - LOAD MNIST HANDWRITTEN DIGIT IN C++  
 MNIST handwritten digit is a known dataset for learning machine learning, this popularity will allow me to have support to realize my neural network, and then test it on fashion mnist which is very similar
 #### 1.1 - Download MINST handwritten digit dataset
 The files are available here : http://yann.lecun.com/exdb/mnist/
@@ -36,6 +38,23 @@ https://github.com/wichtounet/mnist which allow me to easily read the byte file 
      return 0;
  }
   ``` 
+## 2 - Conception
+This part may change in the future, if i misunderstanding a concept, 
+or that my design is not adapted to the problem in the "
+Encountered problem" section, if you decide to create your own neural network, I will try to note all the problem that I have to meet and the solutions that I chose. 
+#### 2.1 - What is a neuron ?
+> An artificial neuron is a mathematical function conceived as a model of biological neurons, a neural network. Artificial neurons are elementary units in an artificial neural network. The artificial neuron receives one or more inputs (representing excitatory postsynaptic potentials and inhibitory postsynaptic potentials at neural dendrites) and sums them to produce an output (or activation, representing a neuron's action potential which is transmitted along its axon). Usually each input is separately weighted, and the sum is passed through a non-linear function known as an activation function or transfer function. [...] 
+
+Source : https://en.wikipedia.org/wiki/Artificial_neuron
+
+This, is the wikipedia definition but i don't find wikipedia always accessible, i will try with my words and my vision to explain how it work
+
+![alt text](assets/Neuron_scheme.png "Logo Title Text 1")
+
+So, this is the scheme of an Artificial Neuron, 
+#### 2.2 - What is a neural network ?
+
+## Encountered problem
 ## License
 The files are distributed under the terms of the MIT License. The MNIST
 files are not my property. If used in a paper, you'll need to cite the reference
